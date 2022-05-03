@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Κρεοπωλείο &quot;Η Αφθονία&quot;</title>
+</head>
+
+<body>
+  <header>
+    <h2><a href="index.html">Κρεοπωλείο &quot;Η Αφθονία&quot;</a></h2>
+    <p>Το κρέας είναι η τέχνη μας</p>
+    <nav>
+      <ul>
+        <li>Κατάστημα</li>
+        <li>Κρέατα</li>
+        <li>Επικοινωνία</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Επικοινωνία</h1>
+    <form action="/sendData" method="GET">
+      <label for="txtName">Ονοματεπώνυμο:</label>
+      <input type="text" id="txtName" name="name" minlength="3" maxlength="40" required>
+      (*)
+      <br>
+      <label for="txtEmail">E-mail: </label>
+      <input type="email" id="txtEmail" name="email" maxlength="40" required>
+      (*)
+      <br>
+      <label for="txtTel">Τηλέφωνο: </label>
+      <input type="tel" id="txtTel" name="phone">
+      <br>
+      <label for="txtComments">Μήνυμα: </label>
+      <textarea id="txtComments" name="comments" rows="5" cols="40" placeholder="Τι θέλετε να μας πείτε.."></textarea>
+      (*)
+      <br>
+      (*)Τα πεδία είναι υποχρεωτικά
+      <br>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+
+    </form>
+    <article>
+    </article>
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Στις 10 μπριζόλες η 1 δώρο</p>
+  </aside>
+
+  <footer>
+    <p>&copy; Κρεοπωλείο &quot;Η Αφθονία&quot; 2022</p>
+  </footer>
+</body>
+
+</html>

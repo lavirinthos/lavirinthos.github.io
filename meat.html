@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Κρεοπωλείο &quot;Η Αφθονία&quot;</title>
+</head>
+
+<body>
+  <header>
+    <h2><a href="index.html">Κρεοπωλείο &quot;Η Αφθονία&quot;</a></h2>
+    <p>Το κρέας είναι η τέχνη μας</p>
+    <nav>
+      <ul>
+        <li>Κατάστημα</li>
+        <li>Κρέατα</li>
+        <li>Επικοινωνία</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Προϊόντα</h1>
+    <article>
+      <h2>Το κρέας μας</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <td rowspan="1"></td>
+          <th colspan="4">PROIONTA</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th><img src="Images/kotopoulo.jpg" height="40"></th>
+            <td>Κοτόπουλο αλανιάρικο</td>
+            <th>4 €</th>
+          </tr>
+          <tr>
+            <th><img src="Images/xoirino.jpg" height="70"></th>
+            <th>Χοιρινό από σόι</th>
+            <th>5.5 €</th>
+          </tr>
+          </tbody>
+          <tr>
+            <th><img src="Images/mosxari-galaktos.jpg" height="60"></th>
+            <th>Μοσχαράκι γάλακτος</th>
+            <th>9 €</th>
+          </tr>
+          <tr>
+            <th><img src="Images/arni.jpg" height="70"></th>
+            <th>Ζυγούρι</th>
+            <th>7.5 €</th>
+          </tr>
+        </thead>
+      </table>
+    </article>
+
+    <article>
+      <h2>Οι μπριζόλες</h2>
+
+      <p>Εξαιρετικές μπριζόλες<img src="Images/mprizola.jpg"
+        alt="Σταβλίσια μπριζόλα ελληνικού μόσχου"
+        title="Μπριζόλα"width="50" height="50">μπορείτε να βρείτε στο καταστημά μας</p>
+      </article>
+
+     <h2>Κάνουμε και delivery!</h2>
+     Ωράριο παραγγελιών 08:00-14:00
+     <form action="/sendData" method="GET">
+       <label for="txtName">Ονοματεπώνυμο:</label>
+       <input type="text" id="txtName" name="name" minlength="3" maxlength="40" required>
+       (*)
+       <br>
+       <label for="txtAdress">Διεύθυνση:</label>
+       <input type="text" id="txtAdress" name="adress" required>
+       (*)
+       <br>
+       <label for="txtFloor">Όροφος: </label>
+<input type="number" id="txtNum" name="num1" min="0" max="10" required>       (*)
+       <br>
+       <label for="txtEmail">E-mail: </label>
+       <input type="email" id="txtEmail" name="email" maxlength="40" required>
+       (*)
+       <br>
+       <label for="txtTel">Τηλέφωνο: </label>
+       <input type="tel" id="txtTel" name="phone">
+       <br>
+      Πληροφορίες για παράδοση:
+       <br>
+       <textarea id="txtComments" name="comments" rows="5" cols="40" placeholder="..."></textarea>
+       (*)
+       <br>
+       (*)Τα πεδία είναι υποχρεωτικά
+       <br>
+       <br>
+       <fieldset>
+       <legend>Παραγγελία</legend>
+       <ul>
+         <li>Κοτόπουλο αλανιάρικο <input type="number" id="txtnumber name="kototpoulo"  min="0" max="100" required"></li>
+         <li>Χοιρινό από σόι<input type="number" id="txtnumber name="xoirino"  min="0" max="100" required"></li>
+         <li>Μοσχαράκι γάλακτος<input type="number" id="txtnumber name="mosxari"  min="0" max="100" required"></li>
+         <li>Ζυγούρι<input type="number" id="txtnumber name="zygouri"  min="0" max="100" required"></li>
+       </ul>
+       <input type="checkbox" id="chkMailList" name="mailList" value="mail-on">
+       <label for="chkMailList">Ενεργοποίηση προσφοράς</label>
+       </fieldset>
+       <br>
+       <fieldset>
+         <legend>Τρόπος πληρωμής</legend>
+       <form action="/sendData" method="GET">
+         <br>
+         <input type="radio" id="rdcredid" name="payment" value="credit">
+         <label for="rdcredid">Πιστωτική κάρτα</label>
+         <input type="radio" id="rdCash" name="payment" value="cash" checked>
+         <label for="rdCash">Μετρητά</label>
+         </select>
+         </fieldset>
+       <br>
+       <input type="submit" value="Αποστολή">
+       <input type="reset" value="Καθαρισμός">
+
+     </form>
+
+
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Στις 10 μπριζόλες η 1 δώρο</p>
+  </aside>
+
+  <footer>
+    <p>&copy; Κρεοπωλείο &quot;Η Αφθονία&quot; 2022</p>
+  </footer>
+</body>
+
+</html>
